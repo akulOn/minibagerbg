@@ -1,8 +1,44 @@
-body {
-    height: 100vh;
-    background-color: beige;
+html {
+  font-family: "Inter", sans-serif;
+}
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+  position: relative;
+
+  margin: 0;
+
+  background-color: #d3d9d4;
+
+  text-align: center;
+}
+
+.container {
+  height: 200dvh;
+}
+
+header {
+  position: sticky;
+  top: 0;
+
+  width: 100dvw;
+
+  border-bottom: 1px solid black;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+
+  width: 100dvw;
+
+  border-top: 1px solid black;
+
+  a {
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
