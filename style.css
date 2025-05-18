@@ -12,10 +12,6 @@ body {
   text-align: center;
 }
 
-.container {
-  height: 200dvh;
-}
-
 header {
   position: sticky;
   top: 0;
@@ -25,9 +21,35 @@ header {
   border-bottom: 1px solid black;
 }
 
+main {
+  padding: 20px;
+
+  padding-bottom: 100px;
+}
+
+.offers {
+  display: grid;
+  gap: 2px;
+
+  grid-template-columns: 1fr 1fr;
+
+  * {
+    height: 10vh;
+    border: 1px solid black;
+  }
+}
+
 footer {
   position: fixed;
   bottom: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    flex-grow: 1;
+  }
 
   width: 100dvw;
 
