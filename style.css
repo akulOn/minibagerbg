@@ -56,10 +56,12 @@ main {
   flex-direction: column;
   gap: 1dvw;
 
-  padding: 0 6dvw 0 6dvw;
+  padding: 0 6dvw 6dvw 6dvw;
 
   > .text {
     word-wrap: break-word;
+
+    padding: 6dvw 0 6dvw 0;
   }
 
   > .offers {
@@ -68,11 +70,12 @@ main {
     > div {
       display: flex;
       flex-direction: column;
+      gap: 3dvw;
     }
   }
 }
 
-footer {
+#contact {
   position: fixed;
 
   bottom: 0;
@@ -89,7 +92,22 @@ footer {
 
   border-radius: 30px 30px 0 0;
 
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+
   &:hover {
     cursor: pointer;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+
+  border-top: 1px solid black;
+
+  > div {
+    flex-grow: 1;
+
+    text-align: center;
   }
 }

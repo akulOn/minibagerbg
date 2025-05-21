@@ -1,7 +1,7 @@
 const dialog = document.getElementById("dialog");
-const footer = document.getElementById("footer");
+const contact = document.getElementById("contact");
 
-footer.addEventListener("click", (event) => {
+contact.addEventListener("click", (event) => {
   dialog.showModal();
 });
 
@@ -21,3 +21,22 @@ dialog.addEventListener("click", (event) => {
 dialog.addEventListener("blur", () => {
   dialog.close();
 });
+
+const footer = document.getElementById("footer");
+const observer = new window.IntersectionObserver(
+  ([entry]) => {
+    if (entry.isIntersecting) {
+      contact.style.visibility = "hidden";
+      contact.style.opacity = "0";
+      return;
+    }
+    contact.style.visibility = "visible";
+    contact.style.opacity = "1";
+  },
+  {
+    root: null,
+    threshold: 0.1, // set offset 0.1 means trigger if at least 10% of element in viewport
+  }
+);
+
+observer.observe(footer);
