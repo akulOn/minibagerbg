@@ -71,6 +71,10 @@ main {
       display: flex;
       flex-direction: column;
       gap: 3dvw;
+
+      > img {
+        margin-top: 3dvw;
+      }
     }
   }
 }
