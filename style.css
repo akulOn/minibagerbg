@@ -113,5 +113,14 @@ footer {
     flex-grow: 1;
 
     text-align: center;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
