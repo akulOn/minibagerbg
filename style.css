@@ -32,9 +32,45 @@ header {
 }
 
 main {
-  #welcome_image {
-    width: 100dvw;
-    height: auto;
+  > .welcome_container {
+    color: white;
+    position: relative;
+
+    > .welcome_image {
+      width: 100dvw;
+      height: auto;
+    }
+
+    > .welcome_message {
+      position: absolute;
+
+      top: 0;
+
+      display: flex;
+      flex-direction: column;
+
+      text-align: center;
+      width: 100%;
+    }
+
+    > .call_to_action {
+      position: absolute;
+
+      bottom: 0;
+
+      text-align: center;
+      width: 100%;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
 
