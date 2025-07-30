@@ -5,6 +5,12 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0; /* stick to the top */
+  background-color: inherit;
+  z-index: 1000; /* ensures it stays above other elements */
+  padding: 10px;
+
   display: flex;
 
   align-items: center;
@@ -33,4 +39,5 @@ main {
 }
 
 footer {
+  height: 100dvh;
 }
