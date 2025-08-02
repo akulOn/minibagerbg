@@ -1,7 +1,17 @@
+:root {
+  /* Primary and text colors */
+  --bg-primary: #f9f9f9;
+  --bg-secondary: #dfe6e9;
+
+  /* Text */
+  --text-dark: #2c3e50;
+  --text-light: #7f8c8d;
+}
+
 body {
   margin: 0;
 
-  background-color: #d3d9d4;
+  background-color: var(--bg-primary);
 }
 
 header {
@@ -16,6 +26,8 @@ header {
   align-items: center;
   justify-content: space-evenly;
 
+  gap: 1rem;
+
   a {
     text-decoration: none;
 
@@ -23,6 +35,12 @@ header {
       text-decoration: underline;
       cursor: pointer;
     }
+  }
+
+  .phone_number {
+    background-color: var(--bg-secondary);
+
+    border-radius: 0.5rem;
   }
 }
 
@@ -75,10 +93,10 @@ main {
 
       display: flex;
 
-      border-radius: 2.5%;
+      border-radius: 0.5rem;
       height: 25dvh;
 
-      background-color: darksalmon;
+      background-color: var(--bg-secondary);
 
       .card_image {
         flex: 1 0 100%;
@@ -94,7 +112,7 @@ main {
 
     > .banner {
       position: relative;
-      background-color: antiquewhite;
+      background-color: var(--bg-secondary);
 
       height: 10dvh;
 
@@ -138,7 +156,7 @@ h1 {
 
   margin: 1rem;
 
-  color: white;
+  color: var(--text-dark);
 }
 
 h2 {
@@ -149,7 +167,7 @@ h2 {
 
   margin: 1rem;
 
-  color: white;
+  color: var(--text-dark);
 }
 
 p,
@@ -158,7 +176,7 @@ span {
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
 
-  color: white;
+  color: var(--text-light);
 }
 
 section {
@@ -206,7 +224,7 @@ section {
         height: 0.5rem;
 
         border-radius: 50%;
-        background-color: #fff;
+        background-color: var(--text-light);
 
         opacity: 0.75;
 
