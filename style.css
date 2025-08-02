@@ -70,7 +70,7 @@ main {
   }
 
   > .card_container {
-    .card {
+    > .card {
       position: relative;
 
       margin: 20px;
@@ -89,6 +89,26 @@ main {
       .card_text {
         position: absolute;
         top: 0;
+      }
+    }
+
+    > .banner {
+      position: relative;
+      background-color: antiquewhite;
+
+      height: 10dvh;
+
+      > img {
+        position: absolute;
+        left: -200px;
+      }
+
+      > .small_truck {
+        animation: moveAcross 5s linear infinite;
+      }
+
+      > .small_bulldozer {
+        animation: moveAcross 5s linear infinite reverse;
       }
     }
   }
@@ -163,5 +183,23 @@ section {
         }
       }
     }
+  }
+}
+
+@keyframes moveAcross {
+  0% {
+    left: -200px;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    left: 100vw;
+    opacity: 1;
+  }
+  100% {
+    left: 100vw;
+    opacity: 0;
   }
 }
