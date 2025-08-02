@@ -98,6 +98,9 @@ main {
 
       height: 10dvh;
 
+      display: flex;
+      align-items: center;
+
       > img {
         position: absolute;
         left: -200px;
@@ -195,11 +198,11 @@ section {
     opacity: 1;
   }
   90% {
-    left: 100vw;
+    left: calc(100dvw - 100px);
     opacity: 1;
   }
   100% {
-    left: 100vw;
+    left: calc(100dvw - 100px);
     opacity: 0;
   }
 }
