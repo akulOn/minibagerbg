@@ -15,15 +15,29 @@
     <link rel="stylesheet" href="styles/root_styles.css" />
     <link rel="stylesheet" href="styles/grid_styles.css" />
     <link rel="stylesheet" href="styles/hero_styles.css" />
+    <link rel="stylesheet" href="styles/home_styles.css" />
   </head>
 
   <body>
-    <header class="container">
-      <h1>Mini Bager BG</h1>
-      <p class="subtitle">Mali bager i kamion za sve vaše potrebe</p>
+    <!-- NAV -->
+    <header class="container grid">
+      <div class="col-span-8">
+        <h2>Mini Bager BG</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione
+          neque soluta qui hic accusantium non. Exercitationem maxime est
+          obcaecati quisquam vitae.
+        </p>
+      </div>
+      <nav class="col-span-4 nav-links">
+        <a href="#services">Usluge</a>
+        <a href="#contact">Galerija</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
     </header>
 
-    <section class="container hero grid">
+    <!-- HERO -->
+    <section class="container grid hero">
       <div class="col-span-6 hero-content">
         <h1>Profesionalni radovi sa mini bagerom</h1>
         <p>Precizno. Brzo. Pošteno. Za svaku potrebu na terenu i u dvorištu.</p>
@@ -35,28 +49,56 @@
       <div class="col-span-6 hero-image"></div>
     </section>
 
-    <main class="container grid">
-      <section class="col-span-4">
+    <!-- SERVICES -->
+    <section id="services" class="container grid">
+      <section class="col-span-4 service-card">
         <h2>Iskopi i nivelacija</h2>
         <p>
           Brzi i precizni radovi sa mini bagerom za male i srednje projekte.
         </p>
       </section>
 
-      <section class="col-span-4">
+      <section class="col-span-4 service-card">
         <h2>Odvoz šuta</h2>
         <p>Pouzdan prevoz i odvoz šuta i zemlje malim kamionom.</p>
       </section>
 
-      <section class="col-span-4">
+      <section class="col-span-4 service-card">
         <h2>Terenski radovi</h2>
         <p>
           Pristup i na teško dostupnim terenima — idealno za gradska dvorišta.
         </p>
       </section>
-    </main>
+    </section>
 
-    <footer class="container">
+    <!-- CONTACT -->
+    <section id="contact" class="container grid">
+      <div class="col-span-6 contact-info">
+        <h2>Kontaktirajte nas</h2>
+        <p>Telefon: <a href="tel:+381601234567">+381 60 123 4567</a></p>
+        <p>Email: <a href="mailto:info@minibager.bg">info@minibager.bg</a></p>
+        <p>Adresa: Beograd, Srbija</p>
+      </div>
+
+      <div class="col-span-6 contact-form">
+        <h2>Pošaljite poruku</h2>
+        <form action="#" method="POST">
+          <label for="name">Ime:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Poruka:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" class="btn-primary">Pošalji</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="container" style="text-align: center; padding-block: 2rem">
       <p>© 2025 Mini Bager BG — Sva prava zadržana</p>
     </footer>
   </body>
