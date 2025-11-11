@@ -133,3 +133,25 @@ Klik vodi ka **posebnoj stranici** sa više slika i detaljnim prikazom usluge.
 
 - Email adresa
 - Linkovi ka društvenim mrežama
+
+Serifs
+San Sarffs
+
+Monospace
+
+- H1 - headers
+  najveci
+
+- H2 - subheards
+  navodi paznju i rasporedi stranicu
+
+- p - paragraph
+  tekst - prost
+
+Konverzija korisnika
+
+- jasnoca
+- preglednost
+- motivacija
+
+Dizajniraj za krajnog korisnika
