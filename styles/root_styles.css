@@ -157,6 +157,13 @@ button {
 .btn-primary {
   padding: 0.75rem 1.5rem;
 
+  font-size: var(--h3-size);
+  font-weight: var(--h3-weight);
+  line-height: var(--h3-line-height);
+  letter-spacing: var(--h3-letter-spacing);
+
+  margin: 0.75rem 0;
+
   border-radius: 0.5rem;
   cursor: pointer;
   width: fit-content;
