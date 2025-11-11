@@ -137,6 +137,8 @@ a {
   color: rgba(var(--color-accent), 0.75);
   text-decoration: none;
 
+  transition: color 0.2s ease;
+
   &:hover {
     text-decoration: underline;
   }
@@ -152,6 +154,11 @@ button {
   letter-spacing: var(--overline-letter-spacing);
 
   border: none;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
 }
 
 .btn-primary {
