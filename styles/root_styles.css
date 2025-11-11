@@ -3,7 +3,7 @@
   --color-primary: 0, 0, 0;
   --color-secondary: 2, 48, 71;
   --color-accent: 252, 163, 17;
-  --color-bg: 255, 255, 255;
+  --color-bg: 240, 240, 240;
   --color-text: 34, 34, 34;
 
   /* Font Family */
@@ -133,7 +133,15 @@ h2 {
   padding: var(--gutter);
 }
 
-a,
+a {
+  color: rgba(var(--color-accent), 0.75);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 button {
   background-color: rgba(var(--color-accent), 0.75);
   color: rgba(var(--color-text), 1);
