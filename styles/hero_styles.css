@@ -1,24 +1,23 @@
 .hero {
   align-items: center;
-  min-height: 80vh;
   background-color: var(--color-secondary);
   color: var(--color-bg);
   padding-block: 4rem;
-}
 
-.hero-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1rem;
-}
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
 
-.hero-image {
-  background-image: url("../images/excavator_1.png");
-  background-size: cover;
-  background-position: center;
-  border-radius: 1rem;
-  min-height: 300px;
+  .hero-image {
+    background-image: url("../images/excavator_1.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+    min-height: 300px;
+  }
 }
 
 /* Tablet */
