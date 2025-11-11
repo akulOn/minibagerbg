@@ -1,0 +1,53 @@
+.hero {
+  align-items: center;
+  min-height: 80vh;
+  background-color: var(--color-secondary);
+  color: var(--color-bg);
+  padding-block: 4rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-image {
+  background-image: url("../images/excavator_1.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 1rem;
+  min-height: 300px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .hero {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .hero-content {
+    grid-column: span 8;
+    text-align: center;
+    align-items: center;
+  }
+  .hero-image {
+    grid-column: span 8;
+    min-height: 250px;
+    margin-top: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .hero-content {
+    grid-column: span 4;
+    padding-inline: 1rem;
+  }
+  .hero-image {
+    grid-column: span 4;
+  }
+}
