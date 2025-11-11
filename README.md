@@ -134,10 +134,7 @@ Klik vodi ka **posebnoj stranici** sa više slika i detaljnim prikazom usluge.
 - Email adresa
 - Linkovi ka društvenim mrežama
 
-Serifs
-San Sarffs
-
-Monospace
+# Dizajn
 
 - H1 - headers
   najveci
@@ -155,3 +152,57 @@ Konverzija korisnika
 - motivacija
 
 Dizajniraj za krajnog korisnika
+
+## How do I pick the right fonts? - Font Share
+
+- Roboto
+- Open Sans
+- Montseratt
+
+## How do you set your fonts up? (Type scale system) - Type Scale
+
+- font sizes
+- latter spacing
+- line height
+
+1. Base font size
+<p> = 16px = 1 rem
+
+2. Scale up by ratios
+   major third = 1.25
+
+3. Letter spacing
+   p - default
+   h6 -0.5%
+   ...
+   h1 -2%
+
+4. Line height
+   p - 150%
+   ...
+   h1 - 100%
+
+## Layout
+
+1. Grid system
+   12 - PC
+   8 - tablet
+   4 - mobile
+
+2. Spacing System - 8 point grid system
+
+3. Visual Hierarchy
+
+- blizina - povezati sta je povezano
+- velicina - sto vece to bitnije
+- kontrast
+- poravnanje
+
+## Color
+
+1. Limit your palette - 60 30 10 Rule (CSS Overview)
+   60 - primary
+   30 - secondary
+   10 - accent
+
+2. Give each color a job
