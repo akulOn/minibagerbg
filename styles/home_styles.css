@@ -1,6 +1,8 @@
 /* NAVIGATION */
 
 header {
+  background-color: rgba(var(--color-secondary), 0.1);
+
   display: flex;
   gap: var(--gutter);
 
@@ -39,33 +41,37 @@ header {
 }
 
 /* SERVICES */
-.service-card {
-  background-color: #f8f8f8;
-  border: 1px solid var(--color-secondary);
-  padding: 2rem;
-  border-radius: 1rem;
-  text-align: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+#services {
+  background-color: rgba(var(--color-secondary), 0.1);
 
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  .service-card {
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    }
   }
 }
 
-/* CONTACT FORM */
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
+#contact {
+  /* CONTACT FORM */
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 0.75rem;
-  border-radius: 0.5rem;
-  border: 1px solid #ccc;
-  font-family: var(--font-family);
+  .contact-form input,
+  .contact-form textarea {
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    font-family: var(--font-family);
+  }
 }
 
 .contact-form button.btn-primary {
