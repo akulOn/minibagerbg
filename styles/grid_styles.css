@@ -20,7 +20,8 @@
 
 /* Column span helper */
 [class*="col-span-"] {
-  background-color: rgba(var(--color-bg), 1);
+  background-color: rgba(var(--color-secondary), 0.05);
+
   padding-inline: 1rem;
 
   border-radius: 0.5rem;
