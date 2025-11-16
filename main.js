@@ -25,11 +25,15 @@ const galleryData = {
 
 const services = document.querySelector("#services");
 const cards = document.querySelectorAll(".service-card");
+
 const gallery = document.querySelector("#gallery");
 const gallerySection = document.querySelector(".gallery-section");
 const galleryTitle = document.querySelector(".gallery-title");
 const galleryDescription = document.querySelector(".gallery-description");
 const galleryGrid = document.querySelector("#gallery-grid");
+
+const closeGalleryButton = document.querySelector("#close-gallery");
+const heroSection = document.querySelector(".hero");
 
 cards.forEach((card) => {
   card.addEventListener("click", () => {
@@ -50,3 +54,9 @@ cards.forEach((card) => {
 });
 
 gallerySection.classList.add("active");
+
+closeGalleryButton.addEventListener("click", () => {
+  gallery.style.display = "none";
+
+  heroSection.scrollIntoView({ behavior: "smooth" });
+});
