@@ -12,10 +12,11 @@
     />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="styles/root_styles.css" />
-    <link rel="stylesheet" href="styles/grid_styles.css" />
-    <link rel="stylesheet" href="styles/hero_styles.css" />
-    <link rel="stylesheet" href="styles/home_styles.css" />
+    <link rel="stylesheet" href="styles/root.css" />
+    <link rel="stylesheet" href="styles/grid.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/home.css" />
+    <link rel="stylesheet" href="styles/gallery.css" />
   </head>
 
   <body>
@@ -51,19 +52,19 @@
 
     <!-- SERVICES -->
     <section id="services" class="container grid">
-      <section class="col-span-4 service-card">
+      <section class="col-span-4 service-card" data-service="iskopi">
         <h2>Iskopi i nivelacija</h2>
         <p>
           Brzi i precizni radovi sa mini bagerom za male i srednje projekte.
         </p>
       </section>
 
-      <section class="col-span-4 service-card">
+      <section class="col-span-4 service-card" data-service="odvoz">
         <h2>Odvoz šuta</h2>
         <p>Pouzdan prevoz i odvoz šuta i zemlje malim kamionom.</p>
       </section>
 
-      <section class="col-span-4 service-card">
+      <section class="col-span-4 service-card" data-service="teren">
         <h2>Terenski radovi</h2>
         <p>
           Pristup i na teško dostupnim terenima — idealno za gradska dvorišta.
@@ -72,7 +73,18 @@
     </section>
 
     <!-- GALLERY -->
-    <section id="gallery"></section>
+    <section
+      id="gallery"
+      class="container gallery-section"
+      style="margin-block: 4rem"
+    >
+      <h2 class="gallery-title"></h2>
+      <p class="gallery-description"></p>
+
+      <div id="gallery-grid" class="grid">
+        <!-- JS will insert images here -->
+      </div>
+    </section>
 
     <!-- CONTACT -->
     <section id="contact" class="container grid">
@@ -104,5 +116,7 @@
     <footer class="container" style="text-align: center; padding-block: 2rem">
       <p>© 2025 Mini Bager BG — Sva prava zadržana</p>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>

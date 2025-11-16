@@ -51,6 +51,8 @@ header {
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 
     &:hover {
+      cursor: pointer;
+
       transform: translateY(-5px);
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     }
@@ -76,6 +78,10 @@ header {
 
 .contact-form button.btn-primary {
   width: fit-content;
+}
+
+footer {
+  background-color: rgba(var(--color-secondary), 0.1);
 }
 
 /* RESPONSIVE NAVIGATION */
