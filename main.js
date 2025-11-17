@@ -35,6 +35,20 @@ const galleryGrid = document.querySelector("#gallery-grid");
 const closeGalleryButton = document.querySelector("#close-gallery");
 const heroSection = document.querySelector(".hero");
 
+document.addEventListener("DOMContentLoaded", () => {
+  const key = cards[0].dataset.service;
+  const data = galleryData[key];
+
+  galleryTitle.textContent = data.title;
+  galleryDescription.textContent = data.description;
+
+  galleryGrid.innerHTML = data.images
+    .map((img) => `<div class="gallery-item"><img src="${img}" alt=""></div>`)
+    .join("");
+
+  gallery.style.display = "block";
+});
+
 cards.forEach((card) => {
   card.addEventListener("click", () => {
     const key = card.dataset.service;
