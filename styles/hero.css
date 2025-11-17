@@ -9,6 +9,15 @@
     flex-direction: column;
     justify-content: center;
     gap: 1rem;
+
+    height: 100%;
+
+    > a {
+      font-size: var(--h1-size);
+      font-weight: var(--h1-weight);
+      line-height: var(--h1-line-height);
+      letter-spacing: var(--h1-letter-spacing);
+    }
   }
 
   .hero-image {
