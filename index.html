@@ -61,6 +61,76 @@
       content="https://your-domain.com/images/og-image.jpg"
     />
 
+    <!-- LocalBusiness JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Mini bager i mali kamion - Usluge iskopavanja i prevoza",
+        "description": "Profesionalne usluge mini bagera i malog kamiona: iskopi, ravnanje terena, temeljni radovi, odvoz šuta i drugi građevinski radovi.",
+        "url": "https://YOUR-DOMAIN.com/",
+        "image": "https://YOUR-DOMAIN.com/og-image.jpg",
+        "telephone": "+381-XX-XXX-XXXX",
+        "priceRange": "$",
+        "servesArea": "Srbija",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "ULICA I BROJ",
+          "addressLocality": "GRAD",
+          "postalCode": "XXXXX",
+          "addressCountry": "RS"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": LATITUDE_HERE,
+          "longitude": LONGITUDE_HERE
+        },
+        "openingHoursSpecification": [{
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "18:00"
+        }],
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "Srbija"
+        },
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Iskop mini bagerom",
+              "description": "Iskopi zemlje, rovovi, kanali, temelji, nivelacija terena."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Prevoz malim kamionom",
+              "description": "Odvoz šuta, prevoz peska, zemlje, građevinskog materijala i otpada."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Ravnanje i priprema terena",
+              "description": "Uklanjanje neravnina, priprema dvorišta, čišćenje terena."
+            }
+          }
+        ]
+      }
+    </script>
+
     <!-- Styles -->
     <link rel="stylesheet" href="styles/root.css" />
     <link rel="stylesheet" href="styles/grid.css" />
@@ -223,6 +293,6 @@
       <p>© 2025 Japranin KOP — Sva prava zadržana</p>
     </footer>
 
-    <script src="main.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
