@@ -45,6 +45,27 @@ document.addEventListener("DOMContentLoaded", () => {
   const key = cards[0].dataset.service;
   const data = galleryData[key];
 
+  FillGallery(data);
+});
+
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    const key = card.dataset.service;
+    const data = galleryData[key];
+
+    FillGallery(data);
+  });
+});
+
+gallerySection.classList.add("active");
+
+closeGalleryButton.addEventListener("click", () => {
+  gallery.style.display = "none";
+
+  heroSection.scrollIntoView({ behavior: "smooth" });
+});
+
+function FillGallery(data) {
   galleryTitle.textContent = data.title;
   galleryDescription.textContent = data.description;
 
@@ -56,33 +77,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .join("");
 
   gallery.style.display = "block";
-});
 
-cards.forEach((card) => {
-  card.addEventListener("click", () => {
-    const key = card.dataset.service;
-    const data = galleryData[key];
-
-    galleryTitle.textContent = data.title;
-    galleryDescription.textContent = data.description;
-
-    galleryGrid.innerHTML = data.images
-      .map(
-        (img) =>
-          `<div class="gallery-item"><img src="${img.src}" alt="${img.alt}"></div>`
-      )
-      .join("");
-
-    gallery.style.display = "block";
-
-    gallerySection.scrollIntoView({ behavior: "smooth" });
-  });
-});
-
-gallerySection.classList.add("active");
-
-closeGalleryButton.addEventListener("click", () => {
-  gallery.style.display = "none";
-
-  heroSection.scrollIntoView({ behavior: "smooth" });
-});
+  gallerySection.scrollIntoView({ behavior: "smooth" });
+}
