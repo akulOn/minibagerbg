@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Block internal or sensitive paths if they ever appear
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+
+# Optional: crawling speed control
+# (Google ignores this; others respect it)
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://minibagerbg.rs/sitemap.xml
