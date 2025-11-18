@@ -4,22 +4,28 @@ const galleryData = {
     description:
       "Precizno kopanje, nivelacija terena i priprema za manje građevinske projekte.",
     images: [
-      "images/welcome.png",
-      "images/wooden_house.png",
-      "images/excavator_1.png",
+      { src: "images/welcome.png", alt: "" },
+      { src: "images/wooden_house.png", alt: "" },
+      { src: "images/excavator_1.png", alt: "" },
     ],
   },
   odvoz: {
     title: "Odvoz šuta",
     description:
       "Transport šuta, zemlje i građevinskog materijala malim kamionom.",
-    images: ["images/truck_1.png", "images/truck_2.png"],
+    images: [
+      { src: "images/truck_1.png", alt: "" },
+      { src: "images/truck_2.png", alt: "" },
+    ],
   },
   teren: {
     title: "Terenski radovi",
     description:
       "Radovi u uskim prolazima, dvorištima i na teško pristupačnim mestima.",
-    images: ["images/excavator_1.png", "images/excavator_2.png"],
+    images: [
+      { src: "images/excavator_1.png", alt: "" },
+      { src: "images/excavator_2.png", alt: "" },
+    ],
   },
 };
 
@@ -43,7 +49,10 @@ document.addEventListener("DOMContentLoaded", () => {
   galleryDescription.textContent = data.description;
 
   galleryGrid.innerHTML = data.images
-    .map((img) => `<div class="gallery-item"><img src="${img}" alt=""></div>`)
+    .map(
+      (img) =>
+        `<div class="gallery-item"><img src="${img.src}" alt="${img.alt}"></div>`
+    )
     .join("");
 
   gallery.style.display = "block";
@@ -58,7 +67,10 @@ cards.forEach((card) => {
     galleryDescription.textContent = data.description;
 
     galleryGrid.innerHTML = data.images
-      .map((img) => `<div class="gallery-item"><img src="${img}" alt=""></div>`)
+      .map(
+        (img) =>
+          `<div class="gallery-item"><img src="${img.src}" alt="${img.alt}"></div>`
+      )
       .join("");
 
     gallery.style.display = "block";
