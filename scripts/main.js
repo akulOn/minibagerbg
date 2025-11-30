@@ -72,7 +72,7 @@ function FillGallery(data) {
   galleryGrid.innerHTML = data.images
     .map(
       (img) =>
-        `<div class="gallery-item"><img src="${img.src}" alt="${img.alt}"></div>`
+        `<div class="gallery-item"><img src="${img.src}" alt="${img.alt}" loading="lazy"></div>`
     )
     .join("");
 
